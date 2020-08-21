@@ -14,13 +14,17 @@ $("button").on("click",function(){
             }
             else if (i === currentTime) {
                 $("#"+i+"-row").addClass("present")
+                $("#"+i+"-row").removeClass("past")
             }
             else {
-                $("#"+i+"-row").addClass("future")  
+                $("#"+i+"-row").addClass("future") 
+                $("#"+i+"-row").removeClass("present") 
+                $("#"+i+"-row").removeClass("past")
             }
+
     
         }
     
-    $("#currentDay").text(moment().format('LLLL')); 
+    $("#currentDay").text(moment().format('MMMM Do YYYY')); 
     
     

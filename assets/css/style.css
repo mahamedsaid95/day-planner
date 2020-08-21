@@ -6,7 +6,7 @@ body {
   }
 
   
-  .textarea{
+  textarea{
     background: transparent;
     border: none;
     resize: none;
@@ -15,7 +15,7 @@ body {
     padding: 10px;
   }
   
-  .megatron {
+  .jumbotron {
     text-align: center;
     background-color: transparent;
     color: black;
